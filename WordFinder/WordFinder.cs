@@ -47,6 +47,11 @@ namespace WordSearchApp
                             .Select(w => w.Key);
         }
 
+        /// <summary>
+        /// Cuenta las ocurrencias de la palabra deseada en filas y columnas.
+        /// </summary>
+        /// <param name="word">palabra a buscar.</param>
+        /// <returns>numero de veces encontrado.</returns>
         private int CountOccurrences(string word)
         {
             int count = 0;
@@ -67,7 +72,12 @@ namespace WordSearchApp
 
             return count;
         }
-
+        /// <summary>
+        /// Verifica si existe la palabra deseada en la cadena de texto recibida y cuento.
+        /// </summary>
+        /// <param name="text">texto donde se buscara si existe la palabra.</param>
+        /// <param name="word">Palabra a buscar.</param>
+        /// <returns>numero de veces encontrada.</returns>
         private int CountWordInText(string text, string word)
         {
             int count = 0;
